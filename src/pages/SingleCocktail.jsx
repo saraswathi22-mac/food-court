@@ -57,8 +57,8 @@ export default function SingleCocktail() {
     getCocktail();
   }, [id]);
 
-  if (loading) {
-    return <Loading />;
+  {
+    loading ? <Loading /> : "";
   }
 
   if (!cocktail) {
