@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { useFetch } from "./useFetch";
-import Follower from "./Follower";
+import { useFetch } from "./hooks/useFetch";
+import Follower from "./components/Follower";
+
 function App() {
   const { loading, data } = useFetch();
   const [page, setPage] = useState(0);
