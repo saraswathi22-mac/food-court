@@ -14,11 +14,11 @@ export default function Home() {
     }
   }, [session]);
   return (
-    <div className="grid grid-cols-1md:grid-cols-4">
-      <div>
+    <div className="grid grid-cols-1 md:grid-cols-4">
+      <div className="p-3">
         <CategoryList />
       </div>
-      <div className="bg-blue-300 col-span-3"></div>
+      <div className="col-span-3">Second</div>
     </div>
   );
 }
